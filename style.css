@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    height: 2111px;
+    width: 1400px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+}
+.topo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 1400px;
+    height: 467px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.interno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 1400px;
+    height: 115px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.topo-interno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+    position: static;
+    width: 1136px;
+    height: 115px;
+    left: 152px;
+    top: 0px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+.esquerda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 601px;
+    height: 50px;
+    left: 0px;
+    top: 32.5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.logo{
+    position: static;
+    width: 176px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 32px;
+}
+.barraPesquisa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    position: static;
+    width: 393px;
+    height: 40px;
+    left: calc(50% - 393px/2 + 104px);
+    top: 5px;
+    background: #F5F5F5;
+    border-radius: 20px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 32px;
+}
+.pesquisa{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 329px;
+    height: 16px;
+    left: 16px;
+    top: 12px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 8px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background: #F5F5F5;
+    border: none;
+
+}
+.lupa{
+    position: static;
+    width: 24px;
+    height: 24px;
+    right: 16px;
+    top: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.botaoLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: static;
+    width: 182px;
+    height: 51px;
+    left: 954px;
+    top: 32px;
+    border: 1px solid #2A7AE4;
+    box-sizing: border-box;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    text-align: center;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 32px;
+    position: static;
+    width: 1380px;
+    height: 300px;
+    left: 0px;
+    top: 115px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(assets/imagens/Hero\ \(1\).png);
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 40px 0px;
+}
+.caixaTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 1136px;
+    height: 170px;
+    left: 152px;
+    top: 150px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+h1{
+    position: static;
+    width: 751px;
+    height: 61px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+h2{
+    position: static;
+    width: 751px;
+    height: 26px;
+    left: 0px;
+    top: 77px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+.botaoHero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    position: static;
+    width: 130px;
+    height: 51px;
+    left: 0px;
+    top: 119px;
+    background: #2A7AE4;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 16px 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.linhaProdutos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 1136px;
+    height: 306px;
+    left: 152px;
+    top: 531px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 64px 0px;
+}
+.topoProdutos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 1133px;
+    height: 38px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+.topoProdutos h1{
+    position: static;
+    width: 148px;
+    height: 38px;
+    left: 0px;
+    top: 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 30px;
+}
+.topoProdutos p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 98px;
+    height: 24px;
+    left: 1035px;
+    top: 7px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 880px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+
+
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 1136px;
+    height: 252px;
+    left: 0px;
+    top: 54px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 176px;
+    height: 252px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+li img{
+    position: static;
+    width: 176px;
+    height: 174px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 8px 0px;
+}
+li p{
+    position: static;
+    width: 176px;
+    height: 16px;
+    left: 0px;
+    top: 182px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 5px;
+}
+.preco{
+    position: static;
+    width: 176px;
+    height: 19px;
+    left: 0px;
+    top: 206px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+   
+   
+}
+.verProduto{
+    position: static;
+    width: 91px;
+    height: 19px;
+    left: 0px;
+    top: 233px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    flex: none;
+    order: 3;
+ 
+   
+}
