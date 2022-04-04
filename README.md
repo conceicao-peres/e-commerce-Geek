@@ -13,3 +13,5 @@ o site e o e-commerce deve conter os seguintes requisitos:
 - [ ] Ser responsivo.
 
 ##### _(*em construção 👷‍♀️)_
+
+<a href="https://conceicao-peres.github.io/e-commerce-Geek/" target="_blank">  _**DEMO**_ </a> 
