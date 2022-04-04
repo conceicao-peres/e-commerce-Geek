@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Geek - Login</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style -pagina-login.css">
+    </head>
+    <body class="paginaLogin">
+        <header>
+            <section class="topoLogin">
+                <div class = "interno">
+                    <div class="topo-interno">
+                        <div class="esquerda">
+                            <img class="logo" src="assets/imagens/Logo.png">
+                            <div class="barraPesquisa">
+                                <input class="pesquisa" type="search" placeholder="O que deseja encontra?">
+                                <img class="lupa" src="assets/imagens/lupa.png" id="btnBusca" alt="Buscar"/>
+                            </div>
+                        </div>
+                        <a href="index.html"><input class="botaoLogin" type="submit" nome="botaoLogin" value="Home"></a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section class="login">
+            <form class="formularioLogin">
+                <h1>Iniciar sessão</h1>
+                <div class="campos">
+                    <input type="email" nome="email" id="email" placeholder="Escreva seu e-mail"/>
+                    <input type="password" nome="senha" id="senha" placeholder="Escreva sua senha"/>
+                </div>
+                <input type="submit" nome="btForm" id="btForm" value="Entrar" class="btForm">                   
+             </form>
+        </section>
+        <footer class="footerLogin">
+           <section class="contato">
+               <div class="caixaContato">
+                   <img src="assets/imagens/Logo.png">
+                   <ul>
+                       <li>Quem somos nós</li>
+                       <li>Política de privacidade</li>
+                       <li>Programa fidelidade</li>
+                       <li>Nossas lojas</li>
+                       <li>Quero ser franqueado</li>
+                       <li>Anuncie aqui</li>
+                   </ul>
+                   <form>
+                       <h1>Fale conosco</h1>
+                       <div class="campos">
+                           <input type="text" nome="nome" id="nome" placeholder="Nome"/>
+                           <textarea cols="70" rows="10" nome="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+                       </div>
+                       <input type="submit" value="Enviar mensagem" class="enviar">                   
+                    </form>
+               </div>
+           </section> 
+           <div class="rodape">
+            &copy; Desenvolvido por Conceição Peres - 2022
+           </div>
+        </footer>
+    </body>
+</html>

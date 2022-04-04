@@ -164,7 +164,12 @@ body{
     line-height: 19px;
     color: #2A7AE4;
     text-align: center;
+    cursor: pointer;
 }
+a{
+    text-decoration: none;
+}
+
 .hero{
     display: flex;
     flex-direction: column;
