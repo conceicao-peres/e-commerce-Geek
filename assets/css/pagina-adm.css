@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+body{
+    background: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+    height: 1228px;
+
+}
+.topo{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 115px;
+}
+.caixa{
+    width: 1136px;
+    height: 600px;
+    margin: 64px 0px;
+    align-items: center;
+    margin-left: 152px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 559px;    
+    height: 600px;
+    margin-left: 288.5px;
+    
+}
+.input h1{
+    width: 408px;
+    height: 38px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+.input__imagem{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    width: 559px;    
+    height: 152px;
+    top: 54px; 
+    margin: 16px 0px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B6B6B; 
+}
+.input__imagem__caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px;
+    width: 282px;
+    height: 152px;
+    background: #FFFFFF;
+    border: 1px dashed #C8C8C8;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B6B6B;
+}
+.input__imagem input{
+    display: none;
+}
+.input__imagem label{
+    align-items: center;
+    padding: 16px;
+    width: 239px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.input form{
+    display: flex;
+    flex-direction: column;
+    height: 328px;
+    width: 559px;    
+}
+.input form label, .input form input{
+    width: 96%;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B6B6B;
+    margin-left: 6px;
+}
+.input form label{
+    height: 16px; 
+}
+.input form input{
+    height: 40px;
+    margin-bottom: 20px;  
+}
+#descricao{
+    height: 66px;
+}
+.btForm{
+    width: 100%;
+    height: 51px;
+}

@@ -5,191 +5,95 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alura Geek</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/listas.css">
+
     </head>
     <body>
-        <header>
+        <head>
             <section class="topo">
-                <div class = "interno">
-                    <div class="topo-interno">
-                        <div class="esquerda">
-                            <img class="logo" src="assets/imagens/Logo.png">
-                            <div class="barraPesquisa">
-                                <input class="pesquisa" type="search" placeholder="O que deseja encontra?">
-                                <img class="lupa" src="assets/imagens/lupa.png" id="btnBusca" alt="Buscar"/>
-                            </div>
+                <div class="topo__cabecalho">
+                    <div class="topo__cabecalho__direita">
+                        <img src="assets/imagens/Logo.png">
+                        <div class="topo__cabecalho__direita__pesquisa">
+                            <input type="search" placeholder="O que deseja encontrar?">
+                            <img src="assets/imagens/lupa.png">
                         </div>
-                        <a href="pagina-login.html"><input class="botaoLogin" type="submit" nome="botaoLogin" value="Login"> </a>
+                    </div>
+                    <a href="./assets/html/pagina-login..html"><button class="topo__cabecalho__botao">Login</button></a>
+                </div>
+                <div class="topo__banner">
+                    <div class="topo__banner__caixa">
+                        <h1>Dezembro Promocional</h1>
+                        <h2>Produtos selecionados com até 33% de desconto</h2>
+                       <a href="#linhaConsole"><button>Ver consoles</button></a>
                     </div>
                 </div>
-                <div class="hero">
-                <div class="caixaTexto">
-                    <h1>Dezembro Promocional</h1> 
-                    <h2>Produtos selecionados com 33% de desconto</h2>
-                    <input class="botaoHero" type="submit" nome="botaoHero" value="Ver Consoles"> 
-                </div> 
+            </section>
+        </head>
+        <main>
+            <div class="linhaProduto" id="linhaProduto">
+                <div class="linhaProduto-topo">
+                    <h1>Star Wars</h1>
+                    <a href="./assets/html/pagina-todos-produtos.html"><p>Ver tudo → </p></a>
+                </div>
+                <div class="produto-item" id="produto-item">
+                    <p class="produto-img" id="produto-img"></p>
+                    <h1 class="produto-produto" id="produto-produto"></h1>
+                    <h2 class="produto-preco" id="produto-preco"></h2>
+                </div>
+            </div>
+            <div class="linhaConsole" id="linhaConsole">
+                <div class="linhaConsole-topo">
+                    <h1>Consoles</h1>
+                    <a href="./assets/html/pagina-todos-produtos.html"><p>Ver tudo → </p></a>
+                </div>
+                <div class="console-item" id="console-item">
+                    <p class="console-img" id="console-img"></p>
+                    <h1 class="console-produto" id="console-produto"></h1>
+                    <h2 class="console-preco" id="console-preco"></h2>
+                </div>
+            </div>
+            <div class="linhaDiversos" id="linhaDiversos">
+                <div class="linhaDiversos-topo">
+                    <h1>Diversos</h1>
+                    <a href="./assets/html/pagina-todos-produtos.html"> <p>Ver tudo → </p></a>
+                </div>
+                <div class="diversos-item" id="diversos-item">
+                    <p class="diversos-img" id="diversosimg"></p>
+                    <h1 class="diversos-produto" id="diversos-produto"></h1>
+                    <h2 class="diversos-preco" id="diversos-preco"></h2>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="footer__conteudo">
+                    <img src="assets/imagens/Logo.png">
+                    <ul class="footer__conteudo__links">
+                        <li>Quem somos</li>
+                        <li>Politica de privacidade</li>
+                        <li>Programa Fidelidade</li>
+                        <li>Nossas lojas</li>
+                        <li>Quero ser franqueado</li>
+                        <li>Anuncie aqui</li>
+                    </ul>
+                    <form>
+                        <h1>Fale conosco</h1>
+                        <div class="campos">
+                            <label>Nome<input type="text"></label>
+                            <label>Escreva sua mensagem<textarea cols="30" rows="3"></textarea></label>
+                        </div>
+                        <button type="submit">Enviar mensagem</button>
+                    </form>
                 </div>
             </section>
-        </header>
-        <section class="linhaProdutos">
-            <div class="topoProdutos">
-                <h1>Star Wars</h1>
-                <p>Ver tudo →</p>
-            </div> 
-            <ul class="listaProdutos">
-                <li>
-                    <img src="assets/imagens/Skill.png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (1).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (2).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (3).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (4).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (5).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-            </ul>
-        </section>
-        <section class="linhaProdutos">
-            <div class="topoProdutos">
-                <h1>Consoles</h1>
-                <p>Ver tudo →</p>
-            </div> 
-            <ul class="listaProdutos">
-                <li>
-                    <img src="assets/imagens/Skill (6).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (7).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (8).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (8-1).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (9).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (10).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-            </ul>
-        </section>
-        <section class="linhaProdutos">
-            <div class="topoProdutos">
-                <h1>Diversos</h1>
-                <p>Ver tudo →</p>
-            </div> 
-            <ul class="listaProdutos">
-                <li>
-                    <img src="assets/imagens/Skill (11).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (12).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (13).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (14).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (15).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-                <li>
-                    <img src="assets/imagens/Skill (16).png">
-                    <p>Produto XYZ</p>
-                    <p class="preco">R$ 60,00</p>
-                    <p class="verProduto">Ver produto</p>
-                </li>
-            </ul>
-        </section>
-        <footer>
-           <section class="contato">
-               <div class="caixaContato">
-                   <img src="assets/imagens/Logo.png">
-                   <ul>
-                       <li>Quem somos nós</li>
-                       <li>Política de privacidade</li>
-                       <li>Programa fidelidade</li>
-                       <li>Nossas lojas</li>
-                       <li>Quero ser franqueado</li>
-                       <li>Anuncie aqui</li>
-                   </ul>
-                   <form>
-                       <h1>Fale conosco</h1>
-                       <div class="campos">
-                           <input type="text" nome="nome" id="nome" placeholder="Nome"/>
-                           <textarea cols="70" rows="10" nome="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
-                       </div>
-                       <input type="submit" value="Enviar mensagem" class="enviar">                   
-                    </form>
-
-               </div>
-           </section> 
-           <div class="rodape">
-            &copy; Desenvolvido por Conceição Peres - 2022
-           </div>
+            <div class="rodape">
+                &copy; Desenvolvido por Conceição Peres - 2022
+            </div>
         </footer>
+        <script src="./assets/js/listas.js"></script>
+        <script src="./assets/js/principal.js"></script>
     </body>
-</html>
+</html"
