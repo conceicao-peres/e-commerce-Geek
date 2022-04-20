@@ -7,11 +7,12 @@ function desenharProdutos(){
         arrayItem.push(produtos[i].img)
         arrayItem.push(produtos[i].produto)
         arrayItem.push(produtos[i].preco)
-        arrayItem.push('<a href="./assets/html/pagina-produto.html">Ver produto</a>')
+        arrayItem.push('<a href="">' + produtos[i].link + '</a>')
         arrayItem.push('</div>')
     }
     produtoItem.innerHTML=arrayItem
 }
+
 
 //Consoles
 var consoleItem = document.getElementById("console-item")
@@ -22,7 +23,7 @@ function desenharConsole(){
         arrayItemConsole.push(consoles[i].img)
         arrayItemConsole.push(consoles[i].produto)
         arrayItemConsole.push(consoles[i].preco)
-        arrayItemConsole.push('<a href="./assets/html/pagina-produto.html">Ver produto</a>')
+        arrayItemConsole.push('<a href="">' + produtos[i].link + '</a>')        
         arrayItemConsole.push('</div>')
     } 
     consoleItem.innerHTML=arrayItemConsole
@@ -37,8 +38,7 @@ function desenharDiversos(){
         arrayItemDiversos.push(diversos[i].img)
         arrayItemDiversos.push(diversos[i].produto)
         arrayItemDiversos.push(diversos[i].preco)
-        arrayItemDiversos.push('<a href="./assets/html/pagina-produto.html">Ver produto</a>')
-
+        arrayItemDiversos.push('<a href="">' + produtos[i].link + '</a>')
         arrayItemDiversos.push('</div>')
     } 
     diversosItem.innerHTML=arrayItemDiversos
