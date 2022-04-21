@@ -3,11 +3,11 @@ var produtoItem = document.getElementById("produto-item")
 var  arrayItem = []
 function desenharProdutos(){
     for (var i=0; i<produtos.length; i++){
-        arrayItem.push('<div class="item">')
+        arrayItem.push('<div class="item" id="item">')
         arrayItem.push(produtos[i].img)
         arrayItem.push(produtos[i].produto)
         arrayItem.push(produtos[i].preco)
-        arrayItem.push('<a href="">' + produtos[i].link + '</a>')
+        arrayItem.push('<a href="../html/pagina-produto.html" id="link"> Ver Produto </a>')
         arrayItem.push('</div>')
     }
     produtoItem.innerHTML=arrayItem
