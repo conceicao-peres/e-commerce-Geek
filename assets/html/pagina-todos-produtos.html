@@ -4,13 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alura Geek - Todos Produtos</title>
+        <title>Alura Geek - Todos os produtos</title>
         <link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/pagina-login.css">
-        <link rel="stylesheet" href="../css/listas.css">
+        <link rel="stylesheet" href="../css/topo.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/principal.css">
         <link rel="stylesheet" href="../css/pagina-todos-produtos.css">
 
+
+ 
     </head>
     <body>
         <head>
@@ -23,36 +25,18 @@
                             <img src="../imagens/lupa.png">
                         </div>
                     </div>
-                    <a href="pagina-login..html"><button class="topo__cabecalho__botao">Login</button></a>
+                    <a href="../html/pagina-login.html"><button class="topo__cabecalho__botao">Login</button></a>
                 </div>
             </section>
-        </head>   
+        </head>
         <main>
-            <div class="addProduto" id="addProduto"></div>
-            <div class="titulo">
-                <h1>Todos os produtos</h1>
+            <div class="main__topo">
+                <h1 class="main__topo--titulo">Todos os produtos</h1>
+                <div class="main__topo--botao"></div>
             </div>
-            <div class="linhaTodosProdutos" id="linhaTodosProduto">
-                <div class="todos-produtos-item" id="todos-produtos-item">
-                    <p class="todos-produtos-img" id="todos-produtos-img"></p>
-                    <h1 class="todos-produtos-produto" id="todos-produtos-produto"></h1>
-                    <h2 class="todos-produtos-preco" id="todos-produtos-preco"></h2>
-                </div>
-            </div>
-            <div class="linhaTodosConsoles" id="linhaTodosConsoles">
-                <div class="todos-consoles-item" id="todos-consoles-item">
-                    <p class="todos-consoles-img" id="todos-consoles-img"></p>
-                    <h1 class="todos-consoles-produto" id="todos-consoles-produto"></h1>
-                    <h2 class="todos-consoles-preco" id="todos-consoles-preco"></h2>
-                </div>
-            </div>
-            <div class="linhaTodosDiversos" id="linhaTodosDiversos">
-                <div class="todos-diversos-item" id="todos-diversos-item">
-                    <p class="todos-diversos-img" id="todos-diversos-img"></p>
-                    <h1 class="todos-diversos-produto" id="todos-diversos-produto"></h1>
-                    <h2 class="todos-diversos-preco" id="todos-diversos-preco"></h2>
-                </div>
-            </div>
+            <ul class="lista" data-todos-produtos-list></ul>
+            <ul class="lista" data-todos-consoles-list></ul>
+            <ul class="lista" data-todos-diversos-list></ul>
         </main>
         <footer>
             <section class="footer">
@@ -82,7 +66,5 @@
         </footer>
         <script src="../js/listas.js"></script>
         <script src="../js/pagina-todos-produtos.js"></script>
-        <script src="../js/pagina-login.js"></script>
-
-     </body>
-</html>
+    </body>
+</html> 

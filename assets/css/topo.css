@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.topo{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 115px;
+}
+.topo__cabecalho{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 1136px;
+    height: 115px;
+    align-items: center;
+    margin-left: 152px;
+}
+.topo__cabecalho__direita{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 601px;
+    height: 50px; 
+}
+.topo__cabecalho__direita__pesquisa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;  
+    background: #F5F5F5;
+    border-radius: 20px;
+    width: 393px;
+    height: 40px;
+    margin: 0px 32px;
+}
+.topo__cabecalho__direita__pesquisa input{
+    width: 329px;
+    height: 32px;
+    background: #F5F5F5;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.topo__cabecalho__botao{
+    width: 182px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #2A7AE4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}

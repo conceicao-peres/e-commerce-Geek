@@ -68,4 +68,5 @@ main{
     background: #2A7AE4;
     margin-top: 20px;
     border-radius: 6px;
+    cursor: pointer;
 }

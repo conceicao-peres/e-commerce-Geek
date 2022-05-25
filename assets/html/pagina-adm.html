@@ -6,12 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alura Geek - Adm</title>
         <link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/pagina-login.css">
-        <link rel="stylesheet" href="../css/listas.css">
+        <link rel="stylesheet" href="../css/topo.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/principal.css">
         <link rel="stylesheet" href="../css/pagina-todos-produtos.css">
-        <link rel="stylesheet" href="../css/adm.css">
+        <link rel="stylesheet" href="../css/pagina-adm.css">
 
+
+ 
     </head>
     <body>
         <head>
@@ -24,40 +26,18 @@
                             <img src="../imagens/lupa.png">
                         </div>
                     </div>
-                    <a href="../../index.html"><button class="topo__cabecalho__botao">Home</button></a>
+                    <a href="../html/pagina-login.html"><button class="topo__cabecalho__botao">Login</button></a>
                 </div>
             </section>
-        </head>   
+        </head>
         <main>
-            <section class="main__topo">
-                <div class="titulo">
-                    <h1>Todos os produtos</h1>
-                </div>
-                <div class="addProduto" id="addProduto">
-                    <a href="./pagina-add-produto.html"><button type="submit" class="btForm">Adicionar produto</button></a>           
-                </div>
-            </section>
-            <div class="linhaTodosProdutos" id="linhaTodosProduto">
-                <div class="todos-produtos-item" id="todos-produtos-item">
-                    <p class="todos-produtos-img" id="todos-produtos-img"></p>
-                    <h1 class="todos-produtos-produto" id="todos-produtos-produto"></h1>
-                    <h2 class="todos-produtos-preco" id="todos-produtos-preco"></h2>
-                </div>
+            <div class="main__topo">
+                <h1 class="main__topo--titulo">Todos os produtos</h1>
+               <a href="../html/pagina-add-produto.html"><button class="main__topo--botao" type="submit">Adicionar produto</button></a> 
             </div>
-            <div class="linhaTodosConsoles" id="linhaTodosConsoles">
-                <div class="todos-consoles-item" id="todos-consoles-item">
-                    <p class="todos-consoles-img" id="todos-consoles-img"></p>
-                    <h1 class="todos-consoles-produto" id="todos-consoles-produto"></h1>
-                    <h2 class="todos-consoles-preco" id="todos-consoles-preco"></h2>
-                </div>
-            </div>
-            <div class="linhaTodosDiversos" id="linhaTodosDiversos">
-                <div class="todos-diversos-item" id="todos-diversos-item">
-                    <p class="todos-diversos-img" id="todos-diversos-img"></p>
-                    <h1 class="todos-diversos-produto" id="todos-diversos-produto"></h1>
-                    <h2 class="todos-diversos-preco" id="todos-diversos-preco"></h2>
-                </div>
-            </div>
+            <ul class="lista" data-todos-produtos-list></ul>
+            <ul class="lista" data-todos-consoles-list></ul>
+            <ul class="lista" data-todos-diversos-list></ul>
         </main>
         <footer>
             <section class="footer">
@@ -86,8 +66,6 @@
             </div>
         </footer>
         <script src="../js/listas.js"></script>
-        <script src="../js/pagina-todos-produtos.js"></script>
-        <script src="../js/pagina-login.js"></script>
-
-     </body>
-</html>
+        <script src="../js/pagina-adm.js"></script>
+    </body>
+</html> 

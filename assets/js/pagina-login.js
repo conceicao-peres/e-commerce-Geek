@@ -6,7 +6,7 @@ form.addEventListener('submit', function(e) {
     if(email.value == "adm@gmail.com" && senha.value == "adm123"){
         window.location.href="./pagina-adm.html"
     }else{
-        alert("Digite um usuário e senha nválidos")
+        alert("Digite um usuário e senha válidos")
     }
     e.preventDefault();
 })

@@ -1,33 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
-body{
-    background: #F5F5F5;
-    font-family: 'Raleway', sans-serif;
-    height: 1655px;  
-    position: relative;
-    width: 1440px;
-}
-.topo{
-    background: #FFFFFF;
+main{
     display: flex;
     flex-direction: column;
-    width: 1440px;
-    height: 115px;
+    width: 1136px;
+    margin: 64px 152px;
 }
-main{
-    height: 1350px;
-    height: 1400px;
-    display: flex;
-    flex-direction: column; 
-}
-.titulo{
+.main__topo{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 1133px;
     height: 51px;
-    margin-top: 82px;
 }
-.titulo h1{
+.main__topo--titulo{
     width: 300px;
     height: 38px;
     top: 6.5px;
@@ -37,12 +20,6 @@ main{
     line-height: 38px;
     color: #464646;
 }
-.linhaTodosProdutos, .linhaTodosConsoles, .linhaTodosDiversos{
-    display: flex;
-    flex-direction: column;
-    width: 1136px;
-    height: 306px;
-    margin: 32px 152px;
-    
+.lista{
+    margin: 32px 0px;
 }
-

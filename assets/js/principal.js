@@ -1,49 +1,107 @@
-//Produtos
-var produtoItem = document.getElementById("produto-item")
-var  arrayItem = []
-function desenharProdutos(){
-    for (var i=0; i<produtos.length; i++){
-        arrayItem.push('<div class="item" id="item">')
-        arrayItem.push(produtos[i].img)
-        arrayItem.push(produtos[i].produto)
-        arrayItem.push(produtos[i].preco)
-        arrayItem.push('<a href="../html/pagina-produto.html" id="link"> Ver Produto </a>')
-        arrayItem.push('</div>')
+
+
+const data = new Date
+monName = new Array ("janeiro", "fevereiro", "março", "abril", "Maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+document.getElementById("current_date").innerHTML = monName[data.getMonth()] + ' Promocional'
+
+var addProdutos = () => { 
+    var lista = document.querySelector('[data-produto-list]')
+    
+    for (i = 0; i < produtos.length; i++){
+        var item = document.createElement('li')
+        item.classList.add('item')
+
+        var titulo = document.createElement('h1')
+        var img = document.createElement('h2')
+        var preco = document.createElement('h3')
+
+        var conteudoTitulo= produtos[i].produto
+        var conteudoImg = produtos[i].img
+        var conteudoPreco = produtos[i].preco
+    
+        titulo.innerHTML = conteudoTitulo
+        img.innerHTML = conteudoImg
+        preco.innerHTML = conteudoPreco
+    
+        item.appendChild(img)
+        item.appendChild(titulo)
+        item.appendChild(preco)
+        item.appendChild(BotaoVerProduto())
+
+        lista.appendChild(item)
+
     }
-    produtoItem.innerHTML=arrayItem
+}
+addProdutos()
+
+var addConsoles = () => {
+    var lista = document.querySelector('[data-console-list]')
+
+    for (i = 0; i < consoles.length; i++){
+        var item = document.createElement('li')
+        item.classList.add('item')
+
+        var titulo = document.createElement('h1')
+        var img = document.createElement('h2')
+        var preco = document.createElement('h3')
+    
+        var conteudoTitulo= consoles[i].produto
+        var conteudoImg = consoles[i].img
+        var conteudoPreco = consoles[i].preco
+    
+        titulo.innerHTML = conteudoTitulo
+        img.innerHTML = conteudoImg
+        preco.innerHTML = conteudoPreco
+    
+        item.appendChild(img)
+        item.appendChild(titulo)
+        item.appendChild(preco)
+        item.appendChild(BotaoVerProduto())
+
+
+        lista.appendChild(item)
+    }
+}
+addConsoles()
+
+var addDiversos = () => {
+    var lista = document.querySelector('[data-diversos-list]')
+
+    for (i = 0; i < diversos.length; i++){
+        var item = document.createElement('li')
+        item.classList.add('item')
+
+        var titulo = document.createElement('h1')
+        var img = document.createElement('h2')
+        var preco = document.createElement('h3')
+    
+        var conteudoTitulo= diversos[i].produto
+        var conteudoImg = diversos[i].img
+        var conteudoPreco = diversos[i].preco
+    
+        titulo.innerHTML = conteudoTitulo
+        img.innerHTML = conteudoImg
+        preco.innerHTML = conteudoPreco
+    
+        item.appendChild(img)
+        item.appendChild(titulo)
+        item.appendChild(preco)
+        item.appendChild(BotaoVerProduto())
+
+        lista.appendChild(item)
+    }
+}
+addDiversos()
+
+function BotaoVerProduto() {
+    const botao = document.createElement('button')
+    botao.classList.add('ver-produto-button')
+    botao.innerText = 'Ver produto'
+    botao.addEventListener('click', verProduto)
+    return botao
 }
 
-
-//Consoles
-var consoleItem = document.getElementById("console-item")
-var arrayItemConsole = []
-function desenharConsole(){
-    for (var i=0; i<consoles.length; i++){
-        arrayItemConsole.push('<div class="item">')
-        arrayItemConsole.push(consoles[i].img)
-        arrayItemConsole.push(consoles[i].produto)
-        arrayItemConsole.push(consoles[i].preco)
-        arrayItemConsole.push('<a href="">' + produtos[i].link + '</a>')        
-        arrayItemConsole.push('</div>')
-    } 
-    consoleItem.innerHTML=arrayItemConsole
+function verProduto(evento) {
+    const botaoVer = evento.target
+    botaoVer.addEventListener('click', abrirModal)
 }
-
-//Diversos
-var diversosItem = document.getElementById("diversos-item")
-var  arrayItemDiversos = []
-function desenharDiversos(){
-    for (var i=0; i<diversos.length; i++){
-        arrayItemDiversos.push('<div class="item">')
-        arrayItemDiversos.push(diversos[i].img)
-        arrayItemDiversos.push(diversos[i].produto)
-        arrayItemDiversos.push(diversos[i].preco)
-        arrayItemDiversos.push('<a href="">' + produtos[i].link + '</a>')
-        arrayItemDiversos.push('</div>')
-    } 
-    diversosItem.innerHTML=arrayItemDiversos
-}
-
-desenharProdutos()
-desenharConsole()
-desenharDiversos()

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+body{
+    background: #F5F5F5;
+}
+
+.topo__banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1440px;
+    height: 352px;
+    top: 115px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(../imagens/Hero.jpg);
+ }
+.topo__banner__caixa{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    width: 1136px;
+    height: 170px;
+    margin-left: 152px;
+    margin-top: 150px;
+    color: #FFFFFF;
+}
+.topo__banner__caixa h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+}
+.topo__banner__caixa h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    padding-top: 8px;
+ }
+.topo__banner__caixa button{
+    width: 130px;
+    height: 51px;
+    top: 119px;
+    background: #2A7AE4;
+    margin: 16px 0px;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.linha{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1136px;
+    height: 306px;
+    margin: 64px 152px;
+}
+.linha-topo{
+    display: flex;
+    justify-content: space-between;
+    width: 1136px;
+    height: 38px;
+    margin: 16px;
+}
+.linha-topo-h1{
+    position: static;
+    width: 148px;
+    height: 38px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+.linha-topo-link{
+    width: 100px;
+    height: 19px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+}
+.lista{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 1136px;
+    height: 252px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 176px;
+    height: 252px;
+    margin: 0px 8px;
+}
+.item h2{
+    width: 176px;
+    height: 174px;
+   
+}
+.item h1{
+    width: 176px;
+    height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    margin-top: 10px;
+
+}
+.item h3{
+    width: 176px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 8px 0px;
+   
+}
+.ver-produto-button{
+    border: none;
+    width: 120px;
+    height: 19px;
+    top: 233px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    background: #F5F5F5;
+    padding: 0px 0px;
+    cursor: pointer;
+    text-align: left;
+
+}

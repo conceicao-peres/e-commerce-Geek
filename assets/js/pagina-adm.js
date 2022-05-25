@@ -21,6 +21,8 @@ var addTodosProdutos = () => {
         item.appendChild(img)
         item.appendChild(titulo)
         item.appendChild(preco)
+        item.appendChild(BotaoDeletar())
+
 
         lista.appendChild(item)
     }
@@ -49,6 +51,7 @@ var addTodosConsoles = () => {
         item.appendChild(img)
         item.appendChild(titulo)
         item.appendChild(preco)
+        item.appendChild(BotaoDeletar())
 
         lista.appendChild(item)
     }
@@ -77,8 +80,24 @@ var addTodosDiversos = () => {
         item.appendChild(img)
         item.appendChild(titulo)
         item.appendChild(preco)
+        item.appendChild(BotaoDeletar())
 
         lista.appendChild(item)
     }
 }
 addTodosDiversos()
+
+
+function BotaoDeletar() {
+    const botao = document.createElement('button')
+    botao.classList.add('deletar-produto-button')
+    botao.innerText = '🗑'
+    botao.addEventListener('click', deletar)
+    return botao
+}
+
+function deletar(evento) {
+    const botaoDeletar = evento.target
+    const deleta = botaoDeletar.parentElement
+    deleta.remove()
+}

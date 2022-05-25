@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 470px;
+    left: 0px;
+    top: 1641px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 1440px;
+    height: 470px;
+    background: #EAF2FD;
+}
+.footer__conteudo{
+    display: flex;
+    align-items: flex-start;
+    width: 1136px;
+    height: 240px;
+    left: 152px;
+    top: 64px;
+    margin: 0px 115px;
+}
+.footer__conteudo__links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    height: 234px;
+    left: 288px;
+    margin: 0px 120px;
+}
+.footer__conteudo__links li{
+    margin: 14px 0px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    width: 560px;
+    height: 240px;
+}
+form h1{
+    position: static;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 14px 0px;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+.campos input, textarea{
+    display: flex;
+    border: none;
+    width: 430px;
+    border-radius: 6px;
+}
+.campos label{
+    background-color: #FFFFFF;
+    padding: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A2A2A2; 
+    margin: 4px 0px;
+}
+form button{
+    padding: 16px;
+    position: static;
+    width: 165px;
+    height: 51px;
+    top: 189px;
+    background: #2A7AE4;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+    position: static;
+    width: 1440px;
+    height: 12px;
+    background: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
